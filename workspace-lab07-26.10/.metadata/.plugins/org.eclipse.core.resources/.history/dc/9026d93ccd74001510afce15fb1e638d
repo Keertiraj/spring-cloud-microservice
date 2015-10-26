@@ -1,0 +1,29 @@
+package com.naturalprogrammer.spring.sample.util;
+
+import org.springframework.context.MessageSource;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+public class MyUtil {
+	
+	
+	
+	public MyUtil(MessageSource messageSource) {
+		
+	}
+
+	public static void flash(RedirectAttributes redirectAttributes, String kind, String messageKey)
+	{
+		 redirectAttributes.addFlashAttribute("flashKind",kind);
+		 redirectAttributes.addFlashAttribute("flashMessage",MyUtil.getMessage(messageKey));
+	}
+
+	private static MessageSource messageSource;
+	
+	private static String getMessage(String messageKey) {
+
+		
+		return null;
+	}
+	
+
+}

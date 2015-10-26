@@ -1,0 +1,44 @@
+package com.naturalprogrammer.spring.sample.validators;
+
+import javax.annotation.Resource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.Errors;
+import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
+
+import com.naturalprogrammer.spring.sample.dto.SignupForm;
+import com.naturalprogrammer.spring.sample.repositories.UserRepository;
+
+public class SignupFormValidator extends LocalValidatorFactoryBean{
+	
+	private UserRepository userRepository;
+	
+	@Resource
+    public void setUserRepository(UserRepository userRepository){
+		this.userRepository = userRepository;
+	}	
+	
+	@Override
+	public boolean supports(Class<?> clazz)
+	{
+		return clazz.isAssignableFrom(SignupForm.class);
+	}
+	
+	@Autowired
+	@Override
+	public void validate(Object obj, Errors errors, final Object...validationHints)
+	{
+		super.validate(obj,errors,validationHints);
+		
+		if(!errors.hasErrors()){
+			
+			SignupForm signupForm = (SignupForm) obj;
+			User user = userRepository.findByEmail(signupForm.getEmail());
+			if(user !=null){
+				errors.rejectValue("email", "emailNotUnique");
+			}
+			
+		}
+	}
+
+}

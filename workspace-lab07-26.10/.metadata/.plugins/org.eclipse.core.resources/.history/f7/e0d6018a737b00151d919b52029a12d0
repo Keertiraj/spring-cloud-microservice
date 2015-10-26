@@ -1,0 +1,14 @@
+package com.example.dao;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class DemoDaoImpl extends WordDaoImpl {
+
+	@Override
+	public String getPartOfSpeech() {
+		return demo;
+	}
+
+	
+}

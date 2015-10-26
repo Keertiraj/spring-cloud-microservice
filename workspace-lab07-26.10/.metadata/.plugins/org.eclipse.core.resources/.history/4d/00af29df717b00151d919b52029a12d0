@@ -1,0 +1,9 @@
+package com.example.dao;
+
+import org.springframework.cloud.netflix.feign.FeignClient;
+
+
+@FeignClient
+public interface Demo5Client {
+
+}

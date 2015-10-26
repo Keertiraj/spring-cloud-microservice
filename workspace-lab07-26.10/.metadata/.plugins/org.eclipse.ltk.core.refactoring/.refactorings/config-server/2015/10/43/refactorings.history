@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.example.Lab03ServerApplication&apos; to &apos;ConfigServerApplication&apos;&#x0A;- Original project: &apos;config-server&apos;&#x0A;- Original element: &apos;com.example.Lab03ServerApplication&apos;&#x0A;- Renamed element: &apos;com.example.ConfigServerApplication&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Lab03ServerApplication&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.example{Lab03ServerApplication.java[Lab03ServerApplication" matchStrategy="1" name="ConfigServerApplication" qualified="false" references="true" similarDeclarations="false" stamp="1445566467852" textual="false" version="1.0"/>
+</session>

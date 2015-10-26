@@ -1,0 +1,6 @@
+package com.naturalprogrammer.spring.sample.dto;
+
+
+public class UserDetailsImpl {
+
+}

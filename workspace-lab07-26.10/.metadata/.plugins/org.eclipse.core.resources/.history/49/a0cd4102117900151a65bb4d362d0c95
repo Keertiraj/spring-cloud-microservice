@@ -1,0 +1,12 @@
+package com.example.repository;
+
+import com.example.domain.Team;
+import  org.springframework.data.repository.CrudRepository;
+import org.springframework.data.rest.core.annotation.RestResource;
+
+@RestResource(path="teams", rel="team")
+public interface PlayerRepository extends CrudRepository<Team,Long> {
+	
+	
+
+}

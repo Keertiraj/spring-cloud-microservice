@@ -1,0 +1,12 @@
+package com.naturalprogrammer.spring.sample.services;
+
+import com.naturalprogrammer.spring.sample.dto.SignupForm;
+
+public interface UserService {
+
+	public abstract void signup(SignupForm signupForm);
+	
+	public abstract String verify(String verificationCode);
+
+	
+}

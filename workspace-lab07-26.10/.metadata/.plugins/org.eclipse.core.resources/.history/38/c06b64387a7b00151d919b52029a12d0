@@ -1,0 +1,37 @@
+package com.example.service;
+
+@Service
+public class WordServiceImpl implements WordService {
+
+	@Autowired VerbClient verbClient;
+	@Autowired SubjectClient subjectClient;
+	@Autowired ArticleClient articleClient;
+	@Autowired AdjectiveClient adjectiveClient;
+	@Autowired NounClient nounClient;
+	
+	
+	@Override
+	public Word getSubject() {
+		return subjectClient.getWord();
+	}
+	
+	@Override
+	public Word getVerb() {
+		return verbClient.getWord();
+	}
+	
+	@Override
+	public Word getArticle() {
+		return articleClient.getWord();
+	}
+	
+	@Override
+	public Word getAdjective() {
+		return adjectiveClient.getWord();
+	}
+	
+	@Override
+	public Word getNoun() {
+		return nounClient.getWord();
+	}	
+}

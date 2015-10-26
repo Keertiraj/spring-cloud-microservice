@@ -1,0 +1,13 @@
+package com.naturalprogrammer.spring.sample.dto;
+
+public class Snippet {
+	@RequestMapping(value="/signup",method=RequestMethod.GET)
+	 public String signup(Model model){
+		 
+		 model.addAttribute("signupForm",new SignupForm());
+		 return "signup";
+		 
+	 }
+	
+}
+

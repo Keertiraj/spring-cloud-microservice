@@ -1,0 +1,15 @@
+---
+spring:
+  application:
+    name: lab-03-client
+    
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Keertiraj/microservice-config
+          searchPaths: config
+server:
+  port: 8001
+  

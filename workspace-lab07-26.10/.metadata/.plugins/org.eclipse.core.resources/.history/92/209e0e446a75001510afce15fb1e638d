@@ -1,0 +1,3 @@
+ hello: hello, world
+ signupSuccess: SignupSuccessful. Please check your mailbox.
+ emailNotUnique: Email already exists.

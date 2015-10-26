@@ -1,0 +1,12 @@
+package com.example.dao;
+
+import org.springframework.cloud.netflix.feign.FeignClient;
+
+
+@FeignClient("demo5")
+public interface Demo5Client {
+
+	@RequestMapping(value="/", method=RequestMethod.GET)
+	public Word getWord();
+	
+}

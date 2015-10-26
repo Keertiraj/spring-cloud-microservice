@@ -1,0 +1,24 @@
+package com.naturalprogrammer.spring.sample.validators;
+
+import org.springframework.validation.Errors;
+import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
+
+import com.naturalprogrammer.spring.sample.dto.SignupForm;
+
+public class SignupFormValidator extends LocalValidatorFactoryBean{
+	
+	@Override
+	public boolean supports(Class<?> clazz)
+	{
+		return clazz.isAssignableFrom(SignupForm.class);
+	}
+	
+	@Override
+	public void validate(Object obj, Errors errors, final Object...validationHints)
+	{
+		super.validate(obj,errors,validationHints);
+		
+		
+	}
+
+}

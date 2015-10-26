@@ -1,0 +1,5 @@
+package com.naturalprogrammer.spring.sample.util;
+
+public class MyUtil {
+
+}

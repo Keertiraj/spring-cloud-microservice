@@ -1,0 +1,16 @@
+# Properties active for ALL profiles:
+---
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+spring:
+  application:
+    name: eureka-server-demo
+  cloud:
+    config:
+      uri: http://localhost:8001  # Expect the Spring Cloud Config server to be running on localhost, port 8001.  
+server:
+  port: 8010      # Fix the sentence server to 8020.  This makes it easy to find.

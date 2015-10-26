@@ -1,0 +1,5 @@
+package com.naturalprogrammer.spring.sample.controllers;
+
+public class UserController {
+
+}

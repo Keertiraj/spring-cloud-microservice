@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="lab-01-starter-proj"/>
+<aop-project name="eureka-client-demo"/>
+<aop-project name="config-client"/>
+<aop-project name="eureka-server-demo"/>
+<aop-project name="config-server"/>
+<aop-project name="naturalprogrammer-spring-sample"/>
+<aop-project name="eureka-client-concatenate"/>
+<aop-project name="eureka-client-demo2"/>
+<aop-project name="eureka-client-demo3"/>
+<aop-project name="eureka-client-demo4"/>
+<aop-project name="eureka-client-demo5"/>
+</aop-reference-model>

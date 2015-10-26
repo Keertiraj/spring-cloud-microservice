@@ -1,0 +1,9 @@
+ hello: hello, world
+ signupSuccess: SignupSuccessful. Please check your mailbox.
+ emailNotUnique: Email already exists.
+ 
+ verifySubject: Please verify your email id
+ verifyEmail: Hi, <br/><br/> Your email id at XYZ is unverified. Please check the link below to be verified<br/><br/>{0}<br/><br/>
+ 
+ alreadyVerified: Already Verified
+ incorrect: Incorrect {0}

@@ -1,0 +1,5 @@
+package com.naturalprogrammer.spring.sample.core;
+
+public class HelloController {
+
+}

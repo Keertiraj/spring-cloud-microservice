@@ -1,0 +1,6 @@
+package com.naturalprogrammer.spring.sample.core;
+
+@RestController
+public class HelloController {
+
+}

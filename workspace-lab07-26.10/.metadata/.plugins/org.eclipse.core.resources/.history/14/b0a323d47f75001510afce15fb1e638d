@@ -1,0 +1,5 @@
+package com.naturalprogrammer.spring.sample.config;
+
+public class WebSecurityConfig {
+
+}
