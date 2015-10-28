@@ -1,9 +1,0 @@
----
-spring:
-  application:
-    name: eureka-client-demo3
-  cloud:
-    config:
-      uri: http://localhost:8001
-  profiles:
-    active: demo3
