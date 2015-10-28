@@ -1,5 +1,0 @@
-package com.naturalprogrammer.spring.sample.validators;
-
-public class ResetPasswordFormValidator {
-
-}
